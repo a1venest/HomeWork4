@@ -18,11 +18,11 @@ double Multi(double N)
     for (double i = 1; i <= N; i++)
     {
         multi = Math.Pow(A,i);
-        Console.WriteLine(A + " в степени " + i + " равно: " + multi);
+        //Console.WriteLine(A + " в степени " + i + " равно: " + multi);
     }
     return multi;
 }
 
 
 double N =ImputNumberTwo();
-Multi(N);
+Console.WriteLine(Multi(N));
