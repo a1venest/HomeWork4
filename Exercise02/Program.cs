@@ -14,7 +14,6 @@ int GetDigSumm(int number)
         int num = (number / 10) % 10;
         sum = num + sum;
         number = number / 10;
-        Console.WriteLine("[" + sum + "]" + "{" + number + "}");
     }
     return sum;
 }
