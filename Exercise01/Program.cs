@@ -10,19 +10,27 @@ int ImputNumberTwo()
     return Convert.ToInt32(Console.ReadLine());
 }
 
-double A = ImputNumber();
+int A = ImputNumber();
 
-double Multi(double N)
+int Multi(int N)
 {
-    double multi = 0;
-    for (double i = 1; i <= N; i++)
+    int multi = A;
+    // for (double i = 1; i <= N; i++)
+    // {
+    //     //multi = Math.Pow(A,i);
+    //     //Console.WriteLine(A + " в степени " + i + " равно: " + multi);
+    // }
+    int i = 1;
+    while (i <= N)
     {
-        multi = Math.Pow(A,i);
-        //Console.WriteLine(A + " в степени " + i + " равно: " + multi);
+        
+        multi = multi * A;
+        i++;
     }
+
     return multi;
 }
 
 
-double N =ImputNumberTwo();
+int N = ImputNumberTwo();
 Console.WriteLine(Multi(N));
